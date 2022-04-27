@@ -16,10 +16,10 @@ const equipos = [
   'San Lorenzo',
   'Velez',
   'Newells',
-  'Lanus',
+  'Lanús',
   'Estudiantes',
   'Ferro',
-  'Huracan',
+  'Huracán',
   'Gimnasia',
   'Banfield',
   'Talleres'
@@ -55,7 +55,7 @@ checkboxes.forEach( checkbox => {
 
     } else {
       e.target.checked = false;
-      alerta.innerText = 'No podés elegir más de 4 equipos';
+      alerta.innerText = 'No podés elegir más de 4 equipos!';
     }
   })
 })
