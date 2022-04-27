@@ -5,6 +5,8 @@ const selectAll = elements => document.querySelectorAll(elements);
 
 const mostrarSeleccionados = select('#seleccionados');
 const alerta = select('#alerta');
+const formulario = select('#formulario');
+
 
 const equipos = [
   'River',
@@ -24,15 +26,15 @@ const equipos = [
 ]
 
 
-for(let equipo of equipos) {
-  
-  const formulario = select('#formulario');
-  
+equipos.forEach( equipo => {
+
   formulario.innerHTML += `
   <input type="checkbox" id="${equipo}" name="${equipo}" value="${equipo}">
   <label for="${equipo}">${equipo}</label><br>
   `;
-}
+
+})
+  
 
 const checkboxes = selectAll('input[type=checkbox]');
 
