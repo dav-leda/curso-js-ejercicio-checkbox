@@ -1,0 +1,2 @@
+# Ejercicio Checkbox
+## Curso JavaScript
